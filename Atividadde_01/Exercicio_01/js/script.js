@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const resultado = numero1 + numero2;
 
-        resultadoElemento.textContent = `A soma é ${resultado}`
+        resultadoElemento.textContent = `O resultado da adição é:  ${resultado}`
         
 
     })
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const resultado = numero1 - numero2;
 
-        resultadoElemento.textContent = `A subtração é ${resultado}`
+        resultadoElemento.textContent = `O resultado da subtração é: ${resultado}`
     })
 
     btn3.addEventListener('click', function (){
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const resultado = numero1 * numero2;
 
-        resultadoElemento.textContent = `A multiplicação é ${resultado}`
+        resultadoElemento.textContent = `O resultado da multiplicação é: ${resultado}`
     })
 
     btn4.addEventListener('click', function (){
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const resultado = numero1 / numero2;
 
-        resultadoElemento.textContent = `A divisão é ${resultado}`
+        resultadoElemento.textContent = `O resultado da divisão é: ${resultado}`
     })
 
 

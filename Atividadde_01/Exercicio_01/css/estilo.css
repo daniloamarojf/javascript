@@ -3,8 +3,13 @@
     margin: 0;
 }
 
+body {
+    background-color: rgb(151, 168, 183);
+}
+
 header {
-    background-color: black;
+    font-size: 2rem;
+    background-color: rgb(74, 68, 87);
     color: aliceblue;
     display: flex;
     padding: 30px;
@@ -15,11 +20,50 @@ header {
 #container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
+    align-items: center;
     padding: 40px;
     flex-wrap: wrap;
 }
 
+#orientacao {
+    background-color: white;
+    font-size: 2.5rem;
+    display: flex;
+    padding: 60px;
+    margin: 10px;
+    text-align: center;
+    width: 500px;
+    height: 500px;
+    align-items: center;
+    border-radius: 10px;
+    line-height: 2;
+}
 
+div ol li {
+    text-align: left;
+}
 
+#container .botoes {
+    padding: 40px;
+}
+
+#container input {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#container button {
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#resultado {
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: rgb(183, 197, 209);
+    padding: 40px;
+    text-align: center;
+    font-size: 2rem;
+}
