@@ -49,11 +49,6 @@ div ol li {
     padding: 40px;
 }
 
-#container input {
-    font-size: 1.5rem;
-    padding: 20px;
-    border-radius: 10px;
-}
 
 #container button {
     font-size: 1.5rem;
@@ -69,3 +64,4 @@ div ol li {
     text-align: center;
     font-size: 2rem;
 }
+

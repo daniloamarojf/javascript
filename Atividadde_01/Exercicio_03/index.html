@@ -1,0 +1,41 @@
+<!--Crie um campo de texto e um elemento para mostrar a quantidade 
+de caracteres digitados. Atualize o contador em tempo real.-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Quantidade de caracteres</title>
+</head>
+
+<header>
+    <h1>Mostrando quantidade de caracteres</h1>
+</header>
+
+<body>
+    <section id="container">
+        <div id="orientacao">
+        <ol>
+          <li>Entre com um texto.</li>
+          <li>Acione o botão verificar.</li>
+          <li>Veja quantos caracteres tem o texto.</li>
+        </ol>
+        </div>
+
+        <div>
+            <input type="text" id="texto" placeholder="Digite aqui um texto">
+
+            <div class="botoes">
+                <button id="btnVerificar">Verificar</button>
+
+                <p id="resultado"></p>
+            </div>
+        </div>
+
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

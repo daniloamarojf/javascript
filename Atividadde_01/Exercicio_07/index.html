@@ -1,0 +1,47 @@
+<!--Crie um jogo onde o computador sorteia um número entre 1 e 10 e 
+o usuário tenta adivinhar. Dê dicas se o palpite é maior 
+ou menor que o número sorteado.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <title>Sorteio de números</title>
+  </head>
+
+  <header>
+    <h1>Sorteio de números</h1>
+  </header>
+
+  <body>
+    <section id="container">
+      <div id="orientacao">
+        <!-- Instruções para o usuário -->
+        <ol>
+          <li>Entre com um numero entre 1 e 10 e tente advinhar o número sorteado</li>
+        </ol>
+      </div>
+
+      <div>
+        <!-- Campos de entrada dos números -->
+        <input type="number" id="numero" placeholder="Entre com o número" />
+
+        <div class="botoes">
+          <!-- Botões das operações -->
+          <button id="btnVerificar">Verificar</button>
+
+          <!-- Área onde será exibido o resultado -->
+          <p id="resultado"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inclusão do arquivo de script JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+

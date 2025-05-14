@@ -1,41 +1,33 @@
+<!--Crie um contador regressivo de 10 a 0 que atualiza a cada segundo na página. 
+Quando chegar a 0, exiba "Tempo esgotado!".
+-->
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <!-- Define a codificação de caracteres para UTF-8 -->
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Garante que a página seja responsiva em dispositivos móveis -->
-
     <link rel="stylesheet" href="css/estilo.css" />
-    <!-- Link para o arquivo CSS externo -->
 
-    <title>Calculadora Simples</title>
-    <!-- Título da aba do navegador -->
+    <title>Tabuada</title>
   </head>
 
   <header>
-    <h1>Calculadora Simples</h1>
-    <!-- Cabeçalho com o título da página -->
+    <h1>Tabuada</h1>
   </header>
 
   <body>
     <section id="container">
-      <!-- Área principal da calculadora -->
 
       <div id="orientacao">
-        <!-- Instruções para o usuário -->
         <ol>
-          <li>Entre com 2 (dois) números.</li>
-          <li>Escolha qual operação matemática deseja realizar.</li>
-          <li>Veja o resultado.</li>
+          <li>Entre com um número.</li>
+          <li>Veja a tabuada.</li>
         </ol>
       </div>
 
       <div>
-        <!-- Campos de entrada dos números -->
-        <input type="number" id="numero1" placeholder="Primeiro número" />
-        <input type="number" id="numero2" placeholder="Segundo número" />
+        <input type="number" id="numero" placeholder="Número" />
 
         <div class="botoes">
           <!-- Botões das operações -->
@@ -54,3 +46,4 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+

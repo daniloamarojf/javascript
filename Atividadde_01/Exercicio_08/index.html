@@ -1,0 +1,45 @@
+<!--Crie um campo de entrada e um botão. Ao clicar no botão, 
+exiba o tipo de dado digitado (string, number, etc).-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Tipo de dados</title>
+  </head>
+
+  <header>
+    <h1>Tipo de dados</h1>
+  </header>
+
+  <body>
+    <section id="container">
+      <div id="orientacao">
+        <ol>
+          <li>Entre com qualquer informação</li>
+          <li>Acione o botão verificar para saber o tipo de dado.</li>
+          <li>Veja o resultado.</li>
+        </ol>
+      </div>
+
+      <div>
+        <!-- Campos de entrada dos números -->
+        <input type="text" id="dados" placeholder="Entre com algum dado" />
+
+        <div class="botoes">
+          <!-- Botões das operações -->
+          <button id="btnVerificar">Verificar</button>
+
+          <!-- Área onde será exibido o resultado -->
+          <p id="resultado"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inclusão do arquivo de script JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
