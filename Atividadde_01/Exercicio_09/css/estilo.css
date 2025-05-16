@@ -5,9 +5,16 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(151, 168, 183);
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
 }
+
+body.escuro {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
 
 header {
     font-size: 2rem;
