@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
     btn.addEventListener('click', function() {
-        sorteadoElement.textContent = `Número sorteado ${numeroSorteado}`
 
         const numero = parseInt(input.value);
 
         if (numero === numeroSorteado) {
             resultadoElemento.textContent = 'Acertou';
+
         } else if (numero < numeroSorteado) {
             resultadoElemento.textContent = 'O número sorteado é maior';
         } else {

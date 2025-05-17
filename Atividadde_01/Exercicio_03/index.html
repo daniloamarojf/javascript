@@ -3,39 +3,38 @@ de caracteres digitados. Atualize o contador em tempo real.-->
 
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
     <title>Quantidade de caracteres</title>
-</head>
+  </head>
 
-<header>
+  <header>
     <h1>Mostrando quantidade de caracteres</h1>
-</header>
+  </header>
 
-<body>
+  <body>
     <section id="container">
-        <div id="orientacao">
-        <ol>
-          <li>Entre com um texto.</li>
-          <li>Acione o botão verificar.</li>
-          <li>Veja quantos caracteres tem o texto.</li>
-        </ol>
+      <div id="orientacao">
+        <p>
+          Digite no campo de texto e acompanhe, em tempo real, a contagem de
+          caracteres logo abaixo. O sistema atualiza automaticamente o total à
+          medida que você digita ou apaga.
+        </p>
+      </div>
+
+      <div>
+        <input type="text" id="texto" placeholder="Digite aqui um texto" />
+
+        <div class="botoes">
+          <button id="btnVerificar">Verificar</button>
+
+          <p id="resultado"></p>
         </div>
-
-        <div>
-            <input type="text" id="texto" placeholder="Digite aqui um texto">
-
-            <div class="botoes">
-                <button id="btnVerificar">Verificar</button>
-
-                <p id="resultado"></p>
-            </div>
-        </div>
-
+      </div>
     </section>
-    
+
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
