@@ -76,13 +76,4 @@ button {
     max-width: 200px;
 }
 
-#resultado {
-    margin-top: 40px;
-    border-radius: 10px;
-    background-color: rgb(183, 197, 209);
-    padding: 40px;
-    text-align: center;
-    font-size: 2rem;
-    min-height: 80px;
-    width: 500px;
-}
+
