@@ -1,16 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-
-    const btn = document.getElementById('btnVerificar');
-
-    const resultadoElemento = document.getElementById('resultafo');
-
+document.addEventListener('DOMContentLoaded', function () {
     const input = document.getElementById('texto');
+    const contador = document.getElementById('contador');
 
-    btn.addEventListener('click', function () {
-        const texto = (input.value);
-
-        
-    })
-})
-
-
+    input.addEventListener('input', function () {
+        const texto = input.value;
+        contador.textContent = texto.length;
+    });
+});

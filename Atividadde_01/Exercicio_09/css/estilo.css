@@ -15,7 +15,6 @@ body.escuro {
   color: #f0f0f0;
 }
 
-
 header {
     font-size: 2rem;
     background-color: rgb(74, 68, 87);
@@ -28,7 +27,6 @@ header {
 
 #container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 40px;
     flex-wrap: wrap;
@@ -36,7 +34,6 @@ header {
 }
 
 #orientacao {
-    background-color: white;
     font-size: 2rem;
     display: flex;
     padding: 60px;
@@ -58,31 +55,30 @@ header {
     flex: 1;
 }
 
-div ol li {
-    text-align: left;
-}
+
 
 #container .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 👈 centraliza conteúdo na div */
     padding: 40px;
+    gap: 20px;             /* 👈 espaço entre botão e resultado */
+    width: 100%;
 }
 
 #container input {
     font-size: 1.5rem;
     padding: 20px;
     border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
 }
 
-#container button {
+button {
     font-size: 1.5rem;
     padding: 20px;
     border-radius: 10px;
+    max-width: 200px;
 }
 
-#resultado {
-    margin-top: 40px;
-    border-radius: 10px;
-    background-color: rgb(183, 197, 209);
-    padding: 40px;
-    text-align: center;
-    font-size: 2rem;
-}
+
