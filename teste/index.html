@@ -1,0 +1,48 @@
+<!--Crie um campo de entrada para uma palavra e um botão. Ao clicar no botão,
+ exiba uma mensagem dizendo se a palavra é um palíndromo (lê-se igual de trás para frente).
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <title>Verificação de polídromo</title>
+  </head>
+
+  <header>
+    <h1>Verificação de Palídromo</h1>
+  </header>
+
+  <body>
+    <section id="container">
+      <div id="orientacao">
+        <p>
+          Você já ouviu falar em palíndromos? São palavras que permanecem iguais
+          quando lidas de trás para frente! Neste verificador, você pode digitar
+          qualquer palavra e clicar no botão para saber se ela é ou não um
+          palíndromo. 
+        </p>
+      </div>
+
+      <div>
+        <!-- Campos de entrada dos números -->
+        <input type="text" id="palavra" placeholder="Entre com uma palavra" />
+
+        <div class="botoes">
+          <!-- Botões das operações -->
+          <button id="btnVerificar">Verificar</button>
+
+          <!-- Área onde será exibido o resultado -->
+          <p id="resultado"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inclusão do arquivo de script JavaScript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,25 @@
+document.addEventListener('DOMContentLoaded', function() {
+
+    const btn1 = document.getElementById('btnAdicionar');
+    const btn2 = document.getElementById('btnSubtrair');
+    const btn3 = document.getElementById('btnZerar');
+    const contador = document.getElementById('contador');
+
+    let = 0;
+
+    btn1.addEventListener('click', function(){
+        const contador = (contador ++);
+        contador = textContent(contador);
+    });
+
+    btn2.addEventListener('click', function(){
+        const contador = (contador --);
+        contador = textContent(contador --);
+    });
+
+    btn3.addEventListener('click', function(){
+        const contador = (contador = 0);
+        contador = textContent(contador)
+    })
+
+});

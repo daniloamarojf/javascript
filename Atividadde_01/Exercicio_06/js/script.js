@@ -12,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (palavra !== "") {
             const inverter = palavra.split('').reverse().join('');
             if (palavra === inverter) {
-                resultadoElemento.textContent = 'É um Palíndrômo'
+                const resultadoElemento = textContent = ('É um Palíndrômo')
             } else {
-                resultadoElemento.textContent = 'Não é Palindrômo'
+                resultadoElemento = textContent = 'Não é Palindrômo'
             }
         }
     });
