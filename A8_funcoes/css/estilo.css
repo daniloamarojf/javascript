@@ -1,44 +1,44 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*Fonte do texto*/
+    background-color: #f4f4f9;/*Cor de fundo*/
+    margin: 0;/*Remover margem padrão do navegador*/
+    padding: 40px 20px;/*Espaçamento interno do body*/
+    display: flex;/*alinha os elemntos filhos*/
+    justify-content: center;/*Centraliza Horizontalmente*/
 }
 
 main {
     background: #fff;
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
+    border-radius: 12px;/*Cantos arrendondados*/
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);/*Sombra ao redor da caixa*/
+    max-width: 400px;/*limita a largura*/
+    width: 100%;/*garante que ocupa toda a largura disponível*/
+    text-align: center;/*Centraliza o texto*/
 }
 
 h1 {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 1.5rem;/*Tamanho da fonte*/
+    color: #333;/*Cor do texto*/
+    margin-bottom: 20px;/*Margem abaixo do título*/
 }
 
 label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    display: block;/*O label ocupa a linha toda (comporta como um bloco)*/
+    margin-bottom: 8px;/*Espaço inferior*/
+    font-weight: bold;/*Negrito*/
     color: #555;
 }
 
 /* O seletor input[type="number"] é usado para selecionar e estilizar elementos <input>
 específicos que tem o atributo type definido como "number"*/
-input[type="number"] {
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    border: 1px solid#ccc;
-    border-radius: 6px;
+input[type="number"] { /*Estilizar somente o campo numérico*/
+    padding: 10px; /*Espaçamento interno*/
+    width: 100%;/*Ocupa a largura disponível*/
+    box-sizing: border-box;/*Inclui  o padding r borda no cálculo da largura*/
+    margin-bottom: 15px;/* Espaço inferior*/
+    border: 1px solid #ccc;/*Cor da borda*/
+    border-radius: 6px;/*Borda arredondada*/
     font-size: 1rem;
 }
 
@@ -46,19 +46,19 @@ button {
     padding: 10px 20px;
     background-color: #3498db;
     color: white;
-    border: none;
+    border: none; /* Sem borda*/
     border-radius: 6px;
     font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
+    cursor: pointer;/*Cursor de mãozinha ao passar o mouser*/
+    transition: background 0.3s;/* Para animar a mudança de cor de fundo*/
 }
 
 button:hover {
-    background-color: #2980b9;
+    background-color: #2980b9;/*Ao passar o mouser muda a cor*/
 }
 
 .resultado {
-    margin-top: 20px;
+    margin-top: 20px;/*Margem acima*/
     font-size: 1.2rem;
     color: #2c3e50;
 }

@@ -1,7 +1,7 @@
 // Aguardando o evento "DOMContentLoaded" que é disparado quando o HTML está completamente carregado
 document.addEventListener('DOMContentLoaded', () => {
     // Obtém referência ao botão com ID 'calculadora'
-    const botao = document.getElementById('calculadora');
+    const botao = document.getElementById('calcularBtn');
 
     // Adicionar um listener de evento de clique ao botão
     botao.addEventListener('click', () => {
