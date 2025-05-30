@@ -3,7 +3,7 @@
  * Cada seção explica um método diferente com exemplos práticos
  */
 
-// Array base  que será usado nos explos
+// Array base  que será usado nos exemplos
 let arrayExemplo = ['maça', 'Banana', 'Laranja'];
 
 /**
