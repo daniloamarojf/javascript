@@ -22,3 +22,30 @@ const pessoas = [
     { nome: 'Grace Kelly', idade: 95, cidade: 'Filadélfia' },
     { nome: 'Jaz Sinclair', idade: 17, cidade: 'Dallas' },
 ]; 
+
+// ==================================================
+// MÉTODOS DE ITERAÇÃO
+// ==================================================
+
+/**
+ * MÉTODO: forEach() )paraCada)
+ * DESCRIÃO: Executa uma função para cada elemento do array
+ * NÃO RETORNA um novo array
+ */
+document.getElementById('botao-paraCada').addEventListener('click', function(){
+    // Variável para acumular os resultados
+    let resultado = '';
+
+    // Usando forEach para iterar sobre cada número
+    numeros.forEach(function(numero, indice){
+        resultado += `Posição ${indice}: ${numero}\n`;
+    });
+
+    // Exibindo o resulrtado na página
+    document.getElementById('resultado-paraCada').innerHTML = `
+    <strong>Array original:</strong> ${JSON.stringify(numeros)}<br><br>
+    <strong>Iteração com forEach:</strong><br>
+    ${resultado}
+    <small>Observação: forEach não retorna um novo array</small>
+    `;
+});
