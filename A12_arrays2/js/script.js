@@ -140,3 +140,16 @@ document.getElementById('botao-algum').addEventListener('click', function(){
     <small>Observação: forEach não retorna um novo array</small>
     `;
 });
+
+document.getElementById('botao-todos').addEventListener('click', function() {
+    // Verificando se todos são maiores de idade
+    const todosMaiores = pessoas.every(function(pessoa) {
+        return pessoa.idade >= 18;
+    });
+
+    document.getElementById('resultado-todos').innerHTML = `
+    <strong>Array original:</strong> ${JSON.stringify(pessoas, null, 2)}<br><br>
+    <strong>Todos são maiores de idade (every):</strong> ${todosMaiores ? 'Sim' : 'Não'}<br><br>
+    <small>Observação: every retorna true apenas se TODOS os elementos passaram no teste</small>
+    `;
+});
