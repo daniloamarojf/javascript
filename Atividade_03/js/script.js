@@ -8,9 +8,29 @@ const produtos = [
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-    const bntTodos = document.getElementById('resultado');
-    const bntCosmeticos = document.getElementById('resultado');
-    const bntAliemntos = document.getElementById('resultado');
+    const btnTodos = document.getElementById('resultado');
+    const btnCosmeticos = document.getElementById('resultado');
+    const btnAlimentos = document.getElementById('resultado');
 
+    const todosProdutos = document.getElementById('produtos');
+    const totalProdutos = document.getElementById('total');
+
+    btnAlimentos.addEventListener('click', function() {
+        const produto = categoria.filter(function(alimentos) {
+            return categoria.alimentos;
+
+        const totalProdutos = total.reduce(function(acumulador, valor) {
+            return acumulador + valor
+        }), 0 ;
+    });
+
+    document.getElementById('resultado').innerHTML = `
+        ${JSON.stringify(nome, valor)}`
+    });
+
+    document.getElementById('total'),innerHTML = `
+        Total: ${totalProdutos}`
 
 } );
+
+document.addEventListener
