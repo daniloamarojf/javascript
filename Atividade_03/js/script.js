@@ -1,36 +1,47 @@
 
-
+/**
+ * Criando Arrays
+ */
+ 
 const produtos = [
     { nome: 'Sabonete Natural', valor: 15.00, categoria: 'cosmeticos' },
-    { nome: 'Sampoo Orgânico', valor: 25.00, categoria: 'consmeticos'},
+    { nome: 'Sampoo Orgânico', valor: 25.00, categoria: 'cosmeticos'},
     { nome: 'Granola Artesanal', valor: 18.50, categoria: 'alimentos' },
-    { nome: 'Mel Puro', valor: 22.00, categoria: 'aliemntos'},
+    { nome: 'Mel Puro', valor: 22.00, categoria: 'alimentos'},
 ];
 
 document.addEventListener('DOMContentLoaded', function() {
-    const btnTodos = document.getElementById('resultado');
-    const btnCosmeticos = document.getElementById('resultado');
-    const btnAlimentos = document.getElementById('resultado');
+    const select = document.getElementById('filtro');
+    const resultado = document.getElementById('resultado');
+    const totalProdutos = document.getElementById('totalProdutos');
 
-    const todosProdutos = document.getElementById('produtos');
-    const totalProdutos = document.getElementById('total');
+    /*
+     * Criando uma função para exibir os resultados
+     */
+    function ExibirResultados(ProdutosFiltrados) {
+        let total = 0; /*Variavel para receber total dos produtos */
 
-    btnAlimentos.addEventListener('click', function() {
-        const produto = categoria.filter(function(alimentos) {
-            return categoria.alimentos;
+        /* Usando o forEach para percorrer o array e selecionar nome e valor do produto */
+        ProdutosFiltrados.forEach(function(produtos) {
+            resultado.innerHTML += `${produtos.nome} - R$ ${produtos.valor}`
+            total = total + produtos.valor;
+        });
 
-        const totalProdutos = total.reduce(function(acumulador, valor) {
-            return acumulador + valor
-        }), 0 ;
+        totalProdutos.innerHTML = `Total: R$ ${total}`
+    
+    select.addEventListener('change', function(){
+        const filtro = select.value;
+        let produtosFiltrados = [];
+
+        if (filtro === "todos") {
+            produtosFiltrados = produtos;
+        } else {
+            produtosFiltrados = produtos.filter(function(produtos){
+        return produtos.categoria === filtro;
+        });
+        }
+        ExibirResultados(produtosFiltrados);
     });
-
-    document.getElementById('resultado').innerHTML = `
-        ${JSON.stringify(nome, valor)}`
-    });
-
-    document.getElementById('total'),innerHTML = `
-        Total: ${totalProdutos}`
-
-} );
-
-document.addEventListener
+    
+   ExibirResultados();
+});  
