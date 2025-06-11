@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,16 +7,19 @@
     <title>Loja de produtos naturais</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<body>
-    <header>
+
+<header>
         <h1>Loja de Produtos Naturais</h1>
-    </header>
+</header>
+
+<body>
+    
     <section>
-        <label for="filtrar">Filtrar por categoria: </label>
-            <select name="produtos" id="filtrar">
-                <option value="todos">todos</option>
+        <label for="filtro">Filtrar por categoria: </label>
+            <select name="produtos" id="filtro">
+                <option value="todos">Todos</option>
                 <option value="cosmeticos">Cosméticos</option>
-                <option value="alimentos ">Alimentos</option>
+                <option value="alimentos">Alimentos</option>
             </select>
         </section>
     </section>
@@ -24,10 +28,8 @@
     </section>
          <p id="resultado"></p>
 
-        <p class="total"></p>
-    <section>
-        <p>Total:</p>
-    </section>
+        <p id="totalProdutos"></p>
+    
 
     <script src="js/script.js"></script>
 

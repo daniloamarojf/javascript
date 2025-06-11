@@ -2,14 +2,6 @@ header {
     padding: 20px;
     align-items: center;
     background-color: green;
+    display: flex; 
+    text-align: center;
 }
-
-div {
-    border: 1px solid black;
-    margin: 10px;
-}
-
-#container {
-    display: flex;
-}
-
