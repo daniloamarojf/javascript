@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         totalProdutos.innerHTML = `Total: R$ ${total.toFixed(2)}`;
+    }
     
     select.addEventListener('change', function(){
         const filtro = select.value;
