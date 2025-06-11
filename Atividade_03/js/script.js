@@ -19,15 +19,16 @@ document.addEventListener('DOMContentLoaded', function() {
      * Criando uma função para exibir os resultados
      */
     function ExibirResultados(ProdutosFiltrados) {
+        resultado.innerHTML = "";
         let total = 0; /*Variavel para receber total dos produtos */
 
         /* Usando o forEach para percorrer o array e selecionar nome e valor do produto */
         ProdutosFiltrados.forEach(function(produtos) {
-            resultado.innerHTML += `${produtos.nome} - R$ ${produtos.valor}`
+            resultado.innerHTML += `${produtos.nome} - R$ ${produtos.valor.toFixed(2)}`
             total = total + produtos.valor;
         });
 
-        totalProdutos.innerHTML = `Total: R$ ${total}`
+        totalProdutos.innerHTML = `Total: R$ ${total.toFixed(2)}`;
     
     select.addEventListener('change', function(){
         const filtro = select.value;
@@ -37,11 +38,13 @@ document.addEventListener('DOMContentLoaded', function() {
             produtosFiltrados = produtos;
         } else {
             produtosFiltrados = produtos.filter(function(produtos){
-        return produtos.categoria === filtro;
-        });
+            return produtos.categoria === filtro;
+            });
         }
+
         ExibirResultados(produtosFiltrados);
     });
     
    ExibirResultados();
-});  
+
+});
