@@ -14,11 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isNaN(numero)) {
             resultado.innerHTML = "Digite um número inteiro";
-            return;
-        }
-            
-
-        if (numero % 2 === 0) {
+        } else if (numero % 2 === 0) {
             resultado.innerHTML = "Número é PAR" 
         } else {
             resultado.innerHTML = "Número é ÍMPAR"
