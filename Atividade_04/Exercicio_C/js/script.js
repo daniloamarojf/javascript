@@ -8,6 +8,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const velocidade = parseFloat(input.value);
 
+        if (isNaN(velocidade) || velocidade <= 0) {
+            resultado.innerHTML = "Por favor, digite uma velocidade válida (maior que zero).";
+            return;
+        }
+
         if (isNaN(velocidade)) {
             resultado.innerHTML = "Digite um valor valido!"
             return;

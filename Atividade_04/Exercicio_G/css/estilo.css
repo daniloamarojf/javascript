@@ -35,6 +35,6 @@ button {
     color:white
 }
 
-#resultado {
+#resultado,#explicacao {
     color: red;
 }
