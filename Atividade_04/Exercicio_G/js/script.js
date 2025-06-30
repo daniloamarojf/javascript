@@ -14,17 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (isNaN(medida1) || isNaN(medida2) || isNaN(medida3)) {
             resultado.innerHTML = "Por favor, insira três números válidos.";
-            explicacao.innerHTML = "";
             return;
         }
 
         if (medida1 + medida2 > medida3 &&
             medida1 + medida3 > medida2 && 
             medida2 + medida3 > medida1) {
-            resultado.innerHTML = `As medidas ${medida1}, ${medida2} e ${medida3} forma um trinagulo.`;
+            resultado.innerHTML = `As medidas ${medida1}, ${medida2} e ${medida3} formam um trinagulo.`;
             explicacao.innerHTML = "Pois a soma de dois segmentos é maior que o terceiro."
            } else {
-            resultado.innerHTML = `As medidas ${medida1}, ${medida2} e ${medida3} NÃO forma um trinagulo.`;
+            resultado.innerHTML = `As medidas ${medida1}, ${medida2} e ${medida3} NÃO formam um trinagulo.`;
             explicacao.innerHTML = "Pois a soma de dois segmentos NÃO é maior que o terceiro."
            }
     }

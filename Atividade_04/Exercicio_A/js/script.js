@@ -7,14 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function ParImpar() {
 
-        resultado.innerHTML = "";
-
         const numero = parseInt(input.value);
 
-         if (isNaN(numero) || input.value.trim() === "") {
-            resultado.innerHTML = "Digite um número inteiro válido.";
-            return;
-        }
 
         if (isNaN(numero)) {
             resultado.innerHTML = "Digite um número inteiro";

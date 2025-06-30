@@ -1,9 +1,3 @@
-/*Crie uma página onde o usuário informa a distância da viagem em quilômetros,
- e o site calcula o preço total, conforme a regra:
-Viagens de até 200 km custam R$0,70 por km.
-Viagens acima de 200 km custam R$0,40 por km.
-O valor final deve ser exibido de forma clara, simulando o funcionamento de um sistema real de vendas de passagens.
-*/
 
 document.addEventListener('DOMContentLoaded', () => {
     const botao = document.getElementById('verificar');
@@ -22,10 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (distancia <= 200) {
             preco = distancia * 0.70
-            resultado.innerHTML = `O valor da passagem é: ${preco.toFixed(2)}.`
+            resultado.innerHTML = `O valor da passagem é: R$ ${preco.toFixed(2)}.`
         } else {
             preco = distancia* 0.40
-            resultado.innerHTML = `O valor da passagem é: ${preco.toFixed(2)}.`
+            resultado.innerHTML = `O valor da passagem é: R$ ${preco.toFixed(2)}.`
         }
     }
 

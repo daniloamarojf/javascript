@@ -13,10 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (isNaN(velocidade)) {
-            resultado.innerHTML = "Digite um valor valido!"
-            return;
-        }
 
         if (velocidade <= 60) {
             resultado.innerHTML = "<strong>Parabéns!</strong> A velocidade está dentro do limite."

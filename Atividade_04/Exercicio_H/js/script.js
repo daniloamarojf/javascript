@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
         resultado.innerHTML = `
         <p> Vamos resolver a seguinte expressão <span style="color: red;">${elementoA}𝑥²+${elementoB}𝑥+${elementoC}</span></p>
         <p>1 - Calcular o delta: Δ=b2-4ac: Delta = <span style="color: red;">${delta}</span></p>
-        <p>2 - Utilizar a formula de baskara para calcular X1 e X2:</p>
+        <p>2 - Utilizar a formula de baskara para calcular as raízes X1 e X2:</p>
         <p>    Raíz x1 = <span style="color: red;">${raizX1}</span></p>
         <p>    Raíz x2 = <span style="color: red;">${raizX2}</span></p>
         `;
