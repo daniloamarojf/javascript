@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt_BR">
 <head>
@@ -11,19 +10,19 @@
 <body>
 
     <main>
-        <section id="container">
-            <div>
+        <article id="container">
+            <section>
                 <p>Insira os valor de <strong>a, b, e c</strong> e veja o cálculo das raízes da equação <strong>(a²−b𝑥+c)</strong>.</p>
-            </div>
-            <div>
+            </section>
+            <form id="raizes">
                 <input type="number" id="numero1" placeholder="a">
                 <input type="number" id="numero2" placeholder="b">
                 <input type="number" id="numero3" placeholder="c">
-
-                <button id="verificar">Verificar</button>
-            </div>
+            
+                <button type="button" id="verificar">Verificar</button>
+            </form>    
             <p id="resultado"></p>
-        </section>
+        </article>
     </main>
 
     <script src="js/script.js"></script>
