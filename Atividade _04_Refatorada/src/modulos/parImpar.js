@@ -2,8 +2,8 @@ import { ValidarEntrada } from '../utilitarios/utilitarios.js';
 
 export function CalcularParImpar() {
 
-    const numero = ValidarEntrada('numero', 'resultado-par-impar');
-    const resultado = document.getElementById('resultado-par-impar');
+    const numero = ValidarEntrada('numero', 'resultado');
+    const resultado = document.getElementById('resultado');
 
 
     // Mesmo com a validação foi necessário confirmar se o

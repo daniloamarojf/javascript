@@ -3,10 +3,10 @@ import { ValidarEntrada } from '../utilitarios/utilitarios.js';
 
 export function CalcularMaiorMenor() {
 
-    const numero1 = ValidarEntrada('numero1', 'resultado-maior-menor');
-    const numero2 = ValidarEntrada('numero2', 'resultado-maior-menor');
-    const numero3 = ValidarEntrada('numero3', 'resultado-maior-menor');
-    const resultado = document.getElementById('resultado-maior-menor');
+    const numero1 = ValidarEntrada('numero1', 'resultado');
+    const numero2 = ValidarEntrada('numero2', 'resultado');
+    const numero3 = ValidarEntrada('numero3', 'resultado');
+    const resultado = document.getElementById('resultado');
 
     
     if (numero1 === null || numero2 === null || numero3 === null) {
