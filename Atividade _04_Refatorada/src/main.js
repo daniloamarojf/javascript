@@ -1,6 +1,6 @@
 import { AdicionarEventoBotao } from './utilitarios/utilitarios.js';
 import { CalcularParImpar } from './modulos/parImpar.js';
-import { CalcularMaiorMenor } from './modulos/maiorMenor.js';
+import { CalcularMaiorMenor } from './modulos/parImpar.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     

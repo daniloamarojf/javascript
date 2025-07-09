@@ -33,5 +33,6 @@ export function ValidarEntrada (idInput, idResultado) {
 }
 
 export function AdicionarEventoBotao (idBotao, funcao) {
+    
     document.getElementById(idBotao).addEventListener('click', funcao);
 }
