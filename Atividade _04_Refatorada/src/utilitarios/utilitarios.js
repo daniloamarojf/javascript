@@ -32,7 +32,11 @@ export function ValidarEntrada (idInput, idResultado) {
 
 }
 
+// Criei uma função para adicionar um evento a um botão com dois parâmetro
+// (parâmetro botão) e o (parâmetro Função a ser execultada)
 export function AdicionarEventoBotao (idBotao, funcao) {
     
+    // Criei um objeto com id Botão e logo após um evento de click 
+    // chamando a função 
     document.getElementById(idBotao).addEventListener('click', funcao);
 }
