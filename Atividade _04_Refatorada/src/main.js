@@ -6,6 +6,7 @@ import { CalcularAumento } from './modulos/aumentoSalarial.js';
 import { CalcularPrecoPassagem } from './modulos/passagens.js';
 import { CalcularBissexto } from './modulos/anoBissexto.js';
 import { VerificarTringulo } from './modulos/verificarTriangulo.js';
+import { CalcularEquacao } from './modulos/raizesEquacao.js';
 
 // Só estava carregando o botão parImpar. Para que o botão maioMenor funcionase
 // foi necessário cria condições (if) só o botão maoirMenor funcionaou.
@@ -40,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (document.getElementById('botao-triangulo')) {
         AdicionarEventoBotao('botao-triangulo', VerificarTringulo);
+    }
+
+    if (documento.getElementById('botao-raizes-equacao')) {
+        AdicionarEventoBotao('botao-raizes-equacao', CalcularEquacao);
     }
 })
 
