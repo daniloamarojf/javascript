@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         AdicionarEventoBotao('botao-triangulo', VerificarTringulo);
     }
 
-    if (documento.getElementById('botao-raizes-equacao')) {
+    if (document.getElementById('botao-raizes-equacao')) {
         AdicionarEventoBotao('botao-raizes-equacao', CalcularEquacao);
     }
 })

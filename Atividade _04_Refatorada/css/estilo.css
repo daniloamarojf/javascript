@@ -14,6 +14,12 @@ main {
 
 article {
     display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 242, 240);
+    border-radius: 8px;
+    border: 1px solid black;
+    padding: 30px 30px 60px;
+
 }
 
 article form {
@@ -23,7 +29,6 @@ article form {
     padding: 30px 30px 60px;
     text-align: center;
     border-radius: 8px;
-    border: 1px solid black;
 }
 
 section {
@@ -59,4 +64,6 @@ button {
 
 #resultado {
     color: red;
+    font-size: 2rem;
+    text-align: center;
 }
