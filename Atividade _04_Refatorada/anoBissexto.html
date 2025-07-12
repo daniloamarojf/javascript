@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificação de Par ou Ímpar</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body>
-    
-
+  <body>
     <main>
-        <article>
-           <form id="form-ano-bissexto">
-            <label for="numero">Digite o ano:</label>
-            <input type="number" name="ano" id="ano">
-            <button type="button" id="botao-ano-bissexto">Verificar</button>
-            <p id="resultado"></p>
+      <article>
+        <h1>Verificação de Ano Bissexto</h1>
+        <p>
+          Digite um ano e clique em "Verificar" para saber se ele é bissexto.
+        </p>
 
-            </form>
+        <form id="form-ano-bissexto">
+          <label for="numero">Digite o ano:</label>
+          <input type="number" name="ano" id="ano" />
+          <button type="button" id="botao-ano-bissexto">Verificar</button>
+        </form>
+        <p id="resultado"></p>
 
-        </article>
-      
+      </article>
     </main>
     <script type="module" src="src/main.js"></script>
-   
-</body>
+  </body>
 </html>
-

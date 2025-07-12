@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificação de Par ou Ímpar</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body>
-    
-
+  <body>
     <main>
-        <article>
-           <form id="form-verificar-triangulo">
-            
-            <label for="numero1">Primeira medida:</label>
-            <input type="number" name="medida1" id="medida1"><br>
+      <article>
+        <h1>Verificação de Formação de Triângulo</h1>
+        <p>
+          Digite três valores correspondentes aos lados e clique em "Verificar"
+          para saber se eles podem formar um triângulo.
+        </p>
 
-            <label for="numero2">Segunda medida:</label>
-            <input type="number" name="medida2" id="medida2"><br>
+        <form id="form-verificar-triangulo">
+          <label for="numero1">Primeira medida:</label>
+          <input type="number" name="medida1" id="medida1" /><br />
 
-            <label for="numero3">Terceira medida:</label>
-            <input type="number" name="medida3" id="medida3"><br>
+          <label for="numero2">Segunda medida:</label>
+          <input type="number" name="medida2" id="medida2" /><br />
 
-            <button type="button" id="botao-triangulo">Verificar</button>
-            <p id="resultado"></p>
+          <label for="numero3">Terceira medida:</label>
+          <input type="number" name="medida3" id="medida3" /><br />
 
-            </form>
-        
-        </article>
-      
+          <button type="button" id="botao-triangulo">Verificar</button>
+        </form>
+          <p id="resultado"></p>
+
+
+      </article>
     </main>
     <script type="module" src="src/main.js"></script>
-   
-</body>
+  </body>
 </html>
-

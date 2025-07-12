@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificação de Par ou Ímpar</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body>
-    
-
+  <body>
     <main>
-        <article>
-           <form id="form-maior-menor">
-            <label for="numero1">Primeiro número:</label>
-            <input type="number" name="numero1" id="numero1"><br>
+      <article>
+        <h1>Verificação de Maior e Menor Número</h1>
+        <p>
+          Digite três números e clique em "Verificar" para descobrir qual é o
+          maior e qual é o menor entre eles.
+        </p>
 
-            <label for="numero2">Segundo número:</label>
-            <input type="number" name="numero2" id="numero2"><br>
+        <form id="form-maior-menor">
+          <label for="numero1">Primeiro número:</label>
+          <input type="number" name="numero1" id="numero1" /><br />
 
-            <label for="numero3">Terceiro número:</label>
-            <input type="number" name="numero3" id="numero3"><br>
+          <label for="numero2">Segundo número:</label>
+          <input type="number" name="numero2" id="numero2" /><br />
 
-            <button type="button" id="botao-maior-menor">Verificar</button>
-            <p id="resultado"></p>
+          <label for="numero3">Terceiro número:</label>
+          <input type="number" name="numero3" id="numero3" /><br />
 
-            </form>
+          <button type="button" id="botao-maior-menor">Verificar</button>
+        </form>
+          <p id="resultado"></p>
 
-        </article>
-      
+
+      </article>
     </main>
     <script type="module" src="src/main.js"></script>
-   
-</body>
+  </body>
 </html>
-

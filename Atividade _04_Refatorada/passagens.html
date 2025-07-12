@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificação de Par ou Ímpar</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body>
-    
-
+  <body>
     <main>
-        <article>
-           <form id="form-passagens">
-            <label for="numero">Digite a distancia:</label>
-            <input type="number" name="distancia" id="distancia">
-            <button type="button" id="botao-passagens">Verificar</button>
-            <p id="resultado"></p>
-        
-            </form>
-        
+      <article>
+        <h1>Cálculo do Preço da Passagem</h1>
+        <p>
+          Digite a distância em quilômetros e clique em "Calcular" para saber o
+          preço da passagem com base na distância informada.
+        </p>
 
-        </article>
-      
+        <form id="form-passagens">
+          <label for="numero">Digite a distancia:</label>
+          <input type="number" name="distancia" id="distancia" />
+          <button type="button" id="botao-passagens">Calcular</button>
+        </form>
+          <p id="resultado"></p>
+
+
+      </article>
     </main>
     <script type="module" src="src/main.js"></script>
-   
-</body>
+  </body>
 </html>
-

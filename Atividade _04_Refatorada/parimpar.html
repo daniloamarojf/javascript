@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt_br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verificação de Par ou Ímpar</title>
-    <link rel="stylesheet" href="css/estilo.css">
-</head>
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
 
-<body>
-    
-
+  <body>
     <main>
-        <article>
-            <h1>Verificação de número Par ou Ímpar</h1>
-           <form id="form-par-impar">
-            <label for="numero">Digite o número:</label>
+      <article>
+        <h1>Verificação de Número Par ou Ímpar</h1>
+        <p>
+          Digite um número e clique em "Verificar" para saber se ele é par ou
+          ímpar.
+        </p>
+        <form id="form-par-impar">
+          <label for="numero">Digite o número:</label>
 
-            <input type="number" name="numero" id="numero">
-            <button type="button" id="botao-par-impar">Verificar</button>
-            </form>
+          <input type="number" name="numero" id="numero" />
+          <button type="button" id="botao-par-impar">Verificar</button>
+        </form>
 
-            <p id="resultado"></p>
-
-        </article>
-      
+        <p id="resultado"></p>
+      </article>
     </main>
     <script type="module" src="src/main.js"></script>
-   
-</body>
+  </body>
 </html>
